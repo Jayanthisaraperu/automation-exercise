@@ -3,6 +3,7 @@ package automationexercise.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automationexercise.base.BaseClass;
@@ -22,12 +23,13 @@ public class HomePageTest extends BaseClass {
 	AccountCreatedPage accountCreatedPage;
 	AccountDeletedPage accountDeletedPage;
 
-	@BeforeMethod
-	public void setUp( String browser) {
+	@Parameters("browser")
+	@BeforeMethod(groups = { "Smoke", "Sanity", "Regression" })
+	public void setUp(String browser) {
 		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = { "Smoke", "Sanity", "Regression" })
 	public void tearDown() {
 		getDriver().quit();
 	}
@@ -57,7 +59,7 @@ public class HomePageTest extends BaseClass {
 		String actual = homePage.getLoggedAs();
 		System.out.println(actual);
 		Log.info("Verify Logged in as username is vissible ");
-		Assert.assertEquals(actual, "Logged in as "+ name, "Incorrect User");
+		Assert.assertEquals(actual, "Logged in as " + name, "Incorrect User");
 		Log.info("Logged in as username is vissible ");
 		accountDeletedPage = homePage.deleteAccount();
 		Log.info("Verify AccountDeleted is vissible ");
@@ -69,7 +71,7 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "loginDetails", dataProviderClass = DataProviders.class)
-	public void loginUserWithCorrectEmailAndPassword(String email, String pass)throws Throwable {
+	public void loginUserWithCorrectEmailAndPassword(String email, String pass) throws Throwable {
 		Log.startTestCase("loginUserWithCorrectEmailAndPassword");
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -79,7 +81,7 @@ public class HomePageTest extends BaseClass {
 		Log.info("Verify Login to your account is vissible");
 		Assert.assertTrue(signupPage.logIntoYourAccountDisplayed());
 		Log.info("Login to your account is vissible");
-		homePage =  signupPage.enterCorrectEmailAndPassword(email, pass);
+		homePage = signupPage.enterCorrectEmailAndPassword(email, pass);
 		String actual = homePage.getLoggedAs();
 		System.out.println(actual);
 		Log.info("Verify Logged in as username is vissible ");
@@ -88,9 +90,9 @@ public class HomePageTest extends BaseClass {
 		Log.endTestCase("loginUserWithCorrectEmailAndPassword");
 
 	}
-	
+
 	@Test(dataProvider = "logincredentials", dataProviderClass = DataProviders.class)
-	public void loginUserWithInCorrectEmailAndPassword(String email, String pass) throws Throwable{
+	public void loginUserWithInCorrectEmailAndPassword(String email, String pass) throws Throwable {
 		Log.startTestCase("loginUserWithInCorrectEmailAndPassword");
 
 		homePage = new HomePage();
@@ -101,7 +103,7 @@ public class HomePageTest extends BaseClass {
 		Log.info("Verify Login to your account is vissible");
 		Assert.assertTrue(signupPage.logIntoYourAccountDisplayed());
 		Log.info("Login to your account is vissible");
-		homePage =  signupPage.enterCorrectEmailAndPassword(email, pass);
+		homePage = signupPage.enterCorrectEmailAndPassword(email, pass);
 //		Assert.assertEquals(homePage.getHomePageTitle(), "Automation Exercise", "Incorrect Title");
 		Log.info("Verify Your email or password is incorrect! is vissible");
 		Assert.assertTrue(signupPage.incorrectDisplayed());
@@ -109,7 +111,7 @@ public class HomePageTest extends BaseClass {
 		Log.endTestCase("loginUserWithInCorrectEmailAndPassword");
 
 	}
-	
+
 	@Test(dataProvider = "loginDetails", dataProviderClass = DataProviders.class)
 	public void logoutUser(String email, String pass) throws Throwable {
 		Log.startTestCase("logoutUser");
@@ -118,17 +120,18 @@ public class HomePageTest extends BaseClass {
 		Assert.assertEquals(homePage.getHomePageTitle(), "Automation Exercise", "Incorrect Title");
 		Log.info("HomePage is Successfull");
 		signupPage = homePage.registerUser();
-		homePage =  signupPage.enterCorrectEmailAndPassword(email, pass);
+		homePage = signupPage.enterCorrectEmailAndPassword(email, pass);
 		String actual = homePage.getLoggedAs();
 		System.out.println(actual);
 		Log.info("Verify Logged in as username is vissible ");
 		Assert.assertEquals(actual, "Logged in as Tester", "Incorrect User");
 		Log.info("Logged in as username is vissible ");
-		signupPage =  homePage.clickLogout();
+		signupPage = homePage.clickLogout();
 		Assert.assertEquals(signupPage.getSignupPageUrl(), "https://www.automationexercise.com/login");
 		Log.endTestCase("logoutUser");
 
 	}
+
 	@Test(dataProvider = "signUpCredentials", dataProviderClass = DataProviders.class)
 	public void registerUserwithExistingEmail(String name, String email) {
 		homePage = new HomePage();
@@ -141,19 +144,25 @@ public class HomePageTest extends BaseClass {
 		Log.info("NewUserSignup is vissible ");
 		signupPage.enterSignupCredentials(name, email);
 		Assert.assertTrue(signupPage.emailExisttDisplayed());
-		
+
 	}
+
 	@Test(dataProvider = "subscriptionEmail", dataProviderClass = DataProviders.class)
-	public void verifySubscriptionInhomePage(String email) {
+	public void verifySubscriptionInhomePage(String email) throws Throwable {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
 		Assert.assertEquals(homePage.getHomePageTitle(), "Automation Exercise", "Incorrect Title");
 		Log.info("HomePage is Successfull");
 		homePage.verifySubscriptionFooter(email);
-		Assert.assertTrue(homePage.verifySubscribeMsg());
-
-//		String msg = homePage.verifySubscribeMsg();
-//		System.out.println(msg);
+//		Assert.assertTrue(homePage.verifySubscribeMsg());
+		boolean flag = false;
+		String msg = homePage.verifySubscribeMsg();
+		Thread.sleep(2000);
+		if (msg.contains("You have been successfully subscribed!")) {
+			flag = true;
+		}
+		System.out.println(msg);
+		Assert.assertTrue(flag);
 	}
 
 }

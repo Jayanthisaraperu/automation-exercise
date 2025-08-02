@@ -124,8 +124,8 @@ public class HomePage extends BaseClass {
 		action.click(getDriver(), btn_subscribe);
 	}
 	
-	public boolean verifySubscribeMsg() {
-		return alertmsg.isDisplayed();
+	public String verifySubscribeMsg() {
+		return alertmsg.getText();
 
 	}
 	

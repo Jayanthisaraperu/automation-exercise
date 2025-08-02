@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationexercise.testcases.CategoryPageTest">
+      <class name="automationexercise.testcases.HomePageTest">
         <methods>
           <include name="setUp"/>
+          <include name="loadConfig"/>
           <include name="tearDown"/>
-          <include name="BaseClass"/>
-          <include name="downloadInvoice" invocation-numbers="0"/>
+          <include name="verifySubscriptionInhomePage"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- automationexercise.testcases.CategoryPageTest -->
+      </class> <!-- automationexercise.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

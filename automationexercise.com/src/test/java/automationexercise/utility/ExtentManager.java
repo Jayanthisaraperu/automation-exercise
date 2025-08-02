@@ -22,7 +22,7 @@ public class ExtentManager {
 		extent.attachReporter(htmlReporter);
 		
 		extent.setSystemInfo("HostName", "MyHost");
-		extent.setSystemInfo("ProjectName", "Adactin Automation");
+		extent.setSystemInfo("ProjectName", "Automation Exercise");
 		extent.setSystemInfo("Tester", "Jayanthi");
 		extent.setSystemInfo("OS", "Win11");
 		extent.setSystemInfo("Browser", "Chrome");

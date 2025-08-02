@@ -3,6 +3,7 @@ package automationexercise.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automationexercise.base.BaseClass;
@@ -14,12 +15,13 @@ public class TestCasePageTest extends BaseClass {
 	HomePage homePage;
 	TestCasePage testCasePage;
 	
-	@BeforeMethod
+	@Parameters("browser")
+	@BeforeMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void setUp(String browser) {
 		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}

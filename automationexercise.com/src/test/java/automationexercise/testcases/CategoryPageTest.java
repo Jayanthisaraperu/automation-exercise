@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automationexercise.base.BaseClass;
@@ -45,17 +46,18 @@ public class CategoryPageTest extends BaseClass {
 	PaymentPage paymentPage;
 	OrderPlacedPage orderPlacedPage;
 	
-	@BeforeMethod
+	@Parameters("browser")
+	@BeforeMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void setUp(String browser) {
 		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void viewCategoryProducts() throws Throwable {
 		homepage = new HomePage();
 		homepage.leftbarDisplayed();
@@ -64,7 +66,7 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertTrue(menTshirtsProductsPage.menTshirtsProductDisplayed());
 	}
 
-	@Test(priority = 1)
+	@Test
 	public void viewCartBrandProducts() throws Throwable {
 		homepage = new HomePage();
 		productsPage = homepage.clickProducts();
@@ -75,7 +77,7 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertTrue(brandMadameProductsPage.madameProductsDisplayed());
 	}
 
-	@Test(dataProvider = "searchProduct", dataProviderClass = DataProviders.class, priority = 2)
+	@Test(dataProvider = "searchProduct", dataProviderClass = DataProviders.class)
 	public void searchProductsVerifyCartAfterLogin(String search, String email, String pass) throws Throwable {
 		homepage = new HomePage();
 		productsPage = homepage.clickProducts();
@@ -97,7 +99,7 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertTrue(flag);
 	}
 
-	@Test(dataProvider = "writeReview", dataProviderClass = DataProviders.class, priority = 3)
+	@Test(dataProvider = "writeReview", dataProviderClass = DataProviders.class)
 	public void addReviewOnProduct(String name, String email, String review) throws Throwable {
 		homepage = new HomePage();
 		productsPage = homepage.clickProducts();
@@ -108,7 +110,7 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertTrue(productDetailedPage.enterReviewDetails(name, email, review));
 	}
 	
-	@Test(priority = 4)
+	@Test
 	public void addToCartFromRecommendedItems() throws Throwable {
 		homepage = new HomePage();
 		Thread.sleep(5000);
@@ -117,7 +119,7 @@ public class CategoryPageTest extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider = "signUpPageCredentials", dataProviderClass = DataProviders.class, priority = 6)
+	@Test(dataProvider = "signUpPageCredentials", dataProviderClass = DataProviders.class)
 	public void verifyAddressDetailsInChkoutPage(String name, String email, String pass, String fname, String lname, String add,
 			String coun, String state, String city, String zcode, String mob) throws Throwable {
 		homepage = new HomePage();
@@ -164,7 +166,7 @@ public class CategoryPageTest extends BaseClass {
 		accountDeletedPage.clickAccountDeleteContinue();
 	}
 	
-	@Test(dataProvider = "downloadInvoice", dataProviderClass = DataProviders.class, priority = 5)
+	@Test(dataProvider = "downloadInvoice", dataProviderClass = DataProviders.class)
 	public void downloadInvoice(String email, String pass, String name, String text, String num, String cvcno, String month, String year  ) throws Throwable {
 		homepage = new HomePage();
 		Log.info("Verify HomePage is Successfull");

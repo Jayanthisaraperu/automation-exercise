@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="32" passed="16" failed="10" skipped="1">
+<testng-results ignored="10" total="37" passed="10" failed="9" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-01T16:41:53Z" name="Suite" finished-at="2025-08-01T16:51:25Z" duration-ms="571396">
+  <suite started-at="2025-08-02T10:48:05Z" name="Suite" finished-at="2025-08-02T10:56:23Z" duration-ms="498797">
     <groups>
+      <group name="regression">
+        <method signature="CartPageTest.placeOrderLoginBeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="placeOrderLoginBeforeChkout" class="automationexercise.testcases.CartPageTest"/>
+        <method signature="CartPageTest.placeOrderRegisterWhileChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="placeOrderRegisterWhileChkout" class="automationexercise.testcases.CartPageTest"/>
+        <method signature="CartPageTest.placeOrderRegisterbeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="placeOrderRegisterbeforeChkout" class="automationexercise.testcases.CartPageTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CartPageTest.removeProductsFromCart()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="removeProductsFromCart" class="automationexercise.testcases.CartPageTest"/>
+        <method signature="CartPageTest.verifySubscriptionInCartPage(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="verifySubscriptionInCartPage" class="automationexercise.testcases.CartPageTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="CartPageTest.verifySubscriptionInCartPage(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" name="verifySubscriptionInCartPage" class="automationexercise.testcases.CartPageTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-08-01T16:41:53Z" name="Test" finished-at="2025-08-01T16:51:25Z" duration-ms="571396">
+    <test started-at="2025-08-02T10:48:05Z" name="Test_All" finished-at="2025-08-02T10:56:23Z" duration-ms="498797">
       <class name="automationexercise.testcases.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:46:30Z" name="setUp" finished-at="2025-08-01T16:46:35Z" duration-ms="4478" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:52:59Z" name="setUp" finished-at="2025-08-02T10:53:05Z" duration-ms="5465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="placeOrderLoginBeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:46:35Z" name="placeOrderLoginBeforeChkout" data-provider="placeOrderBeforeLogin" finished-at="2025-08-01T16:46:57Z" duration-ms="22707" status="PASS">
+        <test-method signature="placeOrderLoginBeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:53:05Z" name="placeOrderLoginBeforeChkout" data-provider="placeOrderBeforeLogin" finished-at="2025-08-02T10:53:29Z" duration-ms="23660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,15 +76,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderLoginBeforeChkout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:46:57Z" name="tearDown" finished-at="2025-08-01T16:46:58Z" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:53:29Z" name="tearDown" finished-at="2025-08-02T10:53:29Z" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:46:58Z" name="setUp" finished-at="2025-08-01T16:47:03Z" duration-ms="4894" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:53:29Z" name="setUp" finished-at="2025-08-02T10:53:35Z" duration-ms="5843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="placeOrderRegisterWhileChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:47:03Z" name="placeOrderRegisterWhileChkout" data-provider="placeOrder" finished-at="2025-08-01T16:47:37Z" duration-ms="34086" status="FAIL">
+        <test-method signature="placeOrderRegisterWhileChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:53:35Z" name="placeOrderRegisterWhileChkout" data-provider="placeOrder" finished-at="2025-08-02T10:54:10Z" duration-ms="35423" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -154,18 +180,18 @@
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0ff716452b97e34ee6bc62b8617959c, actions {actions=[org.openqa.selenium.interactions.Sequence@5ad6f98e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60149/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0ff716452b97e34ee6bc62b8617959c]]>
+Command: [73a727335dd84a2d27a82e96c5aece14, actions {actions=[org.openqa.selenium.interactions.Sequence@1868ed54]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61688/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a727335dd84a2d27a82e96c5aece14]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0ff716452b97e34ee6bc62b8617959c, actions {actions=[org.openqa.selenium.interactions.Sequence@5ad6f98e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60149/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0ff716452b97e34ee6bc62b8617959c
+Command: [73a727335dd84a2d27a82e96c5aece14, actions {actions=[org.openqa.selenium.interactions.Sequence@1868ed54]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61688/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a727335dd84a2d27a82e96c5aece14
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -199,7 +225,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
 at automationexercise.actiondriver.Action.click(Action.java:48)
 at automationexercise.pageobjects.EnterAccountInformationPage.enterRegistrationDetails(EnterAccountInformationPage.java:74)
-at automationexercise.testcases.CartPageTest.placeOrderRegisterWhileChkout(CartPageTest.java:68)
+at automationexercise.testcases.CartPageTest.placeOrderRegisterWhileChkout(CartPageTest.java:71)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -241,9 +267,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0ff716452b97e34ee6bc62b8617959c, findElement {using=id, value=id_gender2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60149/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0ff716452b97e34ee6bc62b8617959c
+Command: [73a727335dd84a2d27a82e96c5aece14, findElement {using=id, value=id_gender2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61688/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a727335dd84a2d27a82e96c5aece14
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -260,7 +286,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
 at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
 at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
 at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
@@ -273,15 +299,22 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderRegisterWhileChkout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:47:37Z" name="tearDown" finished-at="2025-08-01T16:47:37Z" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:10Z" name="tearDown" finished-at="2025-08-02T10:54:11Z" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:47:37Z" name="setUp" finished-at="2025-08-01T16:47:43Z" duration-ms="5464" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:11Z" name="setUp" finished-at="2025-08-02T10:54:17Z" duration-ms="5800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="placeOrderRegisterbeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:47:43Z" name="placeOrderRegisterbeforeChkout" data-provider="placeOrder" finished-at="2025-08-01T16:48:05Z" duration-ms="22017" status="FAIL">
+        <test-method signature="placeOrderRegisterbeforeChkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:17Z" name="placeOrderRegisterbeforeChkout" data-provider="placeOrder" finished-at="2025-08-02T10:54:39Z" duration-ms="22509" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -370,18 +403,18 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5d4cb8bc3775c0e2139cdd568b981617, actions {actions=[org.openqa.selenium.interactions.Sequence@70cf7d1e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60196/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d4cb8bc3775c0e2139cdd568b981617]]>
+Command: [4ad0a55d06df55fa53a20f87ad6a56d4, actions {actions=[org.openqa.selenium.interactions.Sequence@572b4072]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61735/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ad0a55d06df55fa53a20f87ad6a56d4]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5d4cb8bc3775c0e2139cdd568b981617, actions {actions=[org.openqa.selenium.interactions.Sequence@70cf7d1e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60196/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d4cb8bc3775c0e2139cdd568b981617
+Command: [4ad0a55d06df55fa53a20f87ad6a56d4, actions {actions=[org.openqa.selenium.interactions.Sequence@572b4072]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61735/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ad0a55d06df55fa53a20f87ad6a56d4
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -415,7 +448,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
 at automationexercise.actiondriver.Action.click(Action.java:48)
 at automationexercise.pageobjects.EnterAccountInformationPage.enterRegistrationDetails(EnterAccountInformationPage.java:74)
-at automationexercise.testcases.CartPageTest.placeOrderRegisterbeforeChkout(CartPageTest.java:101)
+at automationexercise.testcases.CartPageTest.placeOrderRegisterbeforeChkout(CartPageTest.java:110)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -457,9 +490,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5d4cb8bc3775c0e2139cdd568b981617, findElement {using=id, value=id_gender2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60196/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d4cb8bc3775c0e2139cdd568b981617
+Command: [4ad0a55d06df55fa53a20f87ad6a56d4, findElement {using=id, value=id_gender2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61735/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ad0a55d06df55fa53a20f87ad6a56d4
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -476,7 +509,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
 at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
 at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
 at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
@@ -489,88 +522,41 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderRegisterbeforeChkout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:05Z" name="tearDown" finished-at="2025-08-01T16:48:05Z" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:39Z" name="tearDown" finished-at="2025-08-02T10:54:40Z" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:05Z" name="setUp" finished-at="2025-08-01T16:48:09Z" duration-ms="4088" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:40Z" name="setUp" finished-at="2025-08-02T10:54:45Z" duration-ms="5717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="removeProductsFromCart()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:09Z" name="removeProductsFromCart" finished-at="2025-08-01T16:48:16Z" duration-ms="6949" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable: [object HTMLElement] has no size and location
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [658723e200e57d28c983eb862532e7a0, actions {actions=[org.openqa.selenium.interactions.Sequence@448086ab]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60247/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 658723e200e57d28c983eb862532e7a0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLElement] has no size and location
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [658723e200e57d28c983eb862532e7a0, actions {actions=[org.openqa.selenium.interactions.Sequence@448086ab]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60247/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 658723e200e57d28c983eb862532e7a0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-at automationexercise.actiondriver.Action.click(Action.java:48)
-at automationexercise.pageobjects.HomePage.addProductsAndChkout(HomePage.java:151)
-at automationexercise.testcases.CartPageTest.removeProductsFromCart(CartPageTest.java:158)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="removeProductsFromCart()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:45Z" name="removeProductsFromCart" finished-at="2025-08-02T10:54:56Z" duration-ms="10899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductsFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:16Z" name="tearDown" finished-at="2025-08-01T16:48:16Z" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:56Z" name="tearDown" finished-at="2025-08-02T10:54:57Z" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:16Z" name="setUp" finished-at="2025-08-01T16:48:20Z" duration-ms="3941" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:54:57Z" name="setUp" finished-at="2025-08-02T10:55:03Z" duration-ms="6090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySubscriptionInCartPage(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:20Z" name="verifySubscriptionInCartPage" data-provider="subscriptionEmail" finished-at="2025-08-01T16:48:22Z" duration-ms="1379" status="PASS">
+        <test-method signature="verifySubscriptionInCartPage(java.lang.String)[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:55:03Z" name="verifySubscriptionInCartPage" data-provider="subscriptionEmail" finished-at="2025-08-02T10:55:05Z" duration-ms="1832" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -581,17 +567,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubscriptionInCartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@10289886]" started-at="2025-08-01T16:48:22Z" name="tearDown" finished-at="2025-08-01T16:48:22Z" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CartPageTest@7f2cfe3f]" started-at="2025-08-02T10:55:05Z" name="tearDown" finished-at="2025-08-02T10:55:05Z" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationexercise.testcases.CartPageTest -->
       <class name="automationexercise.testcases.ContactusPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.ContactusPageTest@5c86dbc5]" started-at="2025-08-01T16:48:22Z" name="setUp" finished-at="2025-08-01T16:48:26Z" duration-ms="4158" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.ContactusPageTest@1a5b6f42]" started-at="2025-08-02T10:55:05Z" name="setUp" finished-at="2025-08-02T10:55:11Z" duration-ms="5888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contactusPageFormTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.ContactusPageTest@5c86dbc5]" started-at="2025-08-01T16:48:26Z" name="contactusPageFormTest" data-provider="contactusform" finished-at="2025-08-01T16:48:41Z" duration-ms="14724" status="PASS">
+        <test-method signature="contactusPageFormTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.ContactusPageTest@1a5b6f42]" started-at="2025-08-02T10:55:11Z" name="contactusPageFormTest" data-provider="contactusform" finished-at="2025-08-02T10:55:17Z" duration-ms="5763" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -617,17 +610,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactusPageFormTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ContactusPageTest@5c86dbc5]" started-at="2025-08-01T16:48:41Z" name="tearDown" finished-at="2025-08-01T16:48:41Z" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ContactusPageTest@1a5b6f42]" started-at="2025-08-02T10:55:17Z" name="tearDown" finished-at="2025-08-02T10:55:17Z" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationexercise.testcases.ContactusPageTest -->
       <class name="automationexercise.testcases.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:00Z" name="setUp" finished-at="2025-08-01T16:45:04Z" duration-ms="4039" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:51:54Z" name="setUp" finished-at="2025-08-02T10:52:00Z" duration-ms="5714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductsInCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:04Z" name="addProductsInCart" data-provider="firstRow" finished-at="2025-08-01T16:45:18Z" duration-ms="13327" status="FAIL">
+        <test-method signature="addProductsInCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:00Z" name="addProductsInCart" data-provider="firstRow" finished-at="2025-08-02T10:52:12Z" duration-ms="12030" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -668,7 +668,7 @@ at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:652)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:796)
-at automationexercise.testcases.ProductsPageTest.addProductsInCart(ProductsPageTest.java:93)
+at automationexercise.testcases.ProductsPageTest.addProductsInCart(ProductsPageTest.java:95)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -698,15 +698,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductsInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:18Z" name="tearDown" finished-at="2025-08-01T16:45:18Z" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:12Z" name="tearDown" finished-at="2025-08-02T10:52:13Z" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:18Z" name="setUp" finished-at="2025-08-01T16:45:28Z" duration-ms="10297" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:13Z" name="setUp" finished-at="2025-08-02T10:52:18Z" duration-ms="5661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchProduct(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:28Z" name="searchProduct" data-provider="prodName" finished-at="2025-08-01T16:45:33Z" duration-ms="4908" status="PASS">
+        <test-method signature="searchProduct(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:18Z" name="searchProduct" data-provider="prodName" finished-at="2025-08-02T10:52:26Z" duration-ms="7486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -717,41 +724,62 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:33Z" name="tearDown" finished-at="2025-08-01T16:45:33Z" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:26Z" name="tearDown" finished-at="2025-08-02T10:52:26Z" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:33Z" name="setUp" finished-at="2025-08-01T16:45:38Z" duration-ms="4962" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:26Z" name="setUp" finished-at="2025-08-02T10:52:31Z" duration-ms="5028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAllProductsAndProductDetails()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:45:38Z" name="verifyAllProductsAndProductDetails" finished-at="2025-08-01T16:46:06Z" duration-ms="28069" status="PASS">
+        <test-method signature="verifyAllProductsAndProductDetails()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:31Z" name="verifyAllProductsAndProductDetails" finished-at="2025-08-02T10:52:36Z" duration-ms="4486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllProductsAndProductDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:46:06Z" name="tearDown" finished-at="2025-08-01T16:46:07Z" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:36Z" name="tearDown" finished-at="2025-08-02T10:52:36Z" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:46:07Z" name="setUp" finished-at="2025-08-01T16:46:12Z" duration-ms="5155" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:36Z" name="setUp" finished-at="2025-08-02T10:52:42Z" duration-ms="5500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductQuantityInCart()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:46:12Z" name="verifyProductQuantityInCart" finished-at="2025-08-01T16:46:30Z" duration-ms="17763" status="PASS">
+        <test-method signature="verifyProductQuantityInCart()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:42Z" name="verifyProductQuantityInCart" finished-at="2025-08-02T10:52:59Z" duration-ms="17333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductQuantityInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@24959ca4]" started-at="2025-08-01T16:46:30Z" name="tearDown" finished-at="2025-08-01T16:46:30Z" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.ProductsPageTest@28194a50]" started-at="2025-08-02T10:52:59Z" name="tearDown" finished-at="2025-08-02T10:52:59Z" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationexercise.testcases.ProductsPageTest -->
       <class name="automationexercise.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:41Z" name="setUp" finished-at="2025-08-01T16:48:46Z" duration-ms="5162" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:55:17Z" name="setUp" finished-at="2025-08-02T10:55:23Z" duration-ms="5589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginUserWithCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:46Z" name="loginUserWithCorrectEmailAndPassword" data-provider="loginDetails" finished-at="2025-08-01T16:48:51Z" duration-ms="4571" status="PASS">
+        <test-method signature="loginUserWithCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:55:23Z" name="loginUserWithCorrectEmailAndPassword" data-provider="loginDetails" finished-at="2025-08-02T10:55:44Z" duration-ms="21440" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -761,195 +789,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             <param index="1">
               <value>
                 <![CDATA[Testing@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUserWithCorrectEmailAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:51Z" name="tearDown" finished-at="2025-08-01T16:48:51Z" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:51Z" name="setUp" finished-at="2025-08-01T16:48:55Z" duration-ms="3931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:55Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-01T16:48:57Z" duration-ms="2104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:57Z" name="tearDown" finished-at="2025-08-01T16:48:57Z" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:48:57Z" name="setUp" finished-at="2025-08-01T16:49:01Z" duration-ms="3799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:01Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-01T16:49:04Z" duration-ms="2780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jayanthisaraperu@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:04Z" name="tearDown" finished-at="2025-08-01T16:49:04Z" duration-ms="190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:04Z" name="setUp" finished-at="2025-08-01T16:49:12Z" duration-ms="8013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:12Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-01T16:49:14Z" duration-ms="1474" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:14Z" name="tearDown" finished-at="2025-08-01T16:49:14Z" duration-ms="214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:14Z" name="setUp" finished-at="2025-08-01T16:49:20Z" duration-ms="5578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:20Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-01T16:49:22Z" duration-ms="2213" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:22Z" name="tearDown" finished-at="2025-08-01T16:49:22Z" duration-ms="203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:22Z" name="setUp" finished-at="2025-08-01T16:49:26Z" duration-ms="4151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logoutUser(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:26Z" name="logoutUser" data-provider="loginDetails" finished-at="2025-08-01T16:49:32Z" duration-ms="5737" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jayanthisaraperu@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:32Z" name="tearDown" finished-at="2025-08-01T16:49:32Z" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:32Z" name="setUp" finished-at="2025-08-01T16:49:38Z" duration-ms="6119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="registerUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:49:38Z" name="registerUserTest" data-provider="signUpPageCredentials" finished-at="2025-08-01T16:50:02Z" duration-ms="23708" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Neha]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[fdgfbgf@gmailcom]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Nehatest@123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Neha]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Singh]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[6th Street]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Punjab]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Amritsar]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[32.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[9.150563287E9]]>
               </value>
             </param>
           </params>
@@ -963,7 +802,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at automationexercise.testcases.HomePageTest.registerUserTest(HomePageTest.java:49)
+at automationexercise.testcases.HomePageTest.loginUserWithCorrectEmailAndPassword(HomePageTest.java:82)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -992,16 +831,690 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:02Z" name="tearDown" finished-at="2025-08-01T16:50:02Z" duration-ms="276" status="PASS">
+        </test-method> <!-- loginUserWithCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:55:44Z" name="tearDown" finished-at="2025-08-02T10:55:45Z" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:02Z" name="setUp" finished-at="2025-08-01T16:50:07Z" duration-ms="4752" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:55:45Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="31227" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerUserwithExistingEmail(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:07Z" name="registerUserwithExistingEmail" data-provider="signUpCredentials" finished-at="2025-08-01T16:50:09Z" duration-ms="2170" status="PASS">
+        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginUserWithInCorrectEmailAndPassword(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="loginUserWithInCorrectEmailAndPassword" data-provider="logincredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithInCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutUser(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="logoutUser" data-provider="loginDetails" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="registerUserTest" data-provider="signUpPageCredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerUserwithExistingEmail(java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="registerUserwithExistingEmail" data-provider="signUpCredentials" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserwithExistingEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySubscriptionInhomePage(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="verifySubscriptionInhomePage" data-provider="subscriptionEmail" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 22.312
+  (Session info: chrome=138.0.7204.158)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bcbda15794cd1e8313ace15f9991451, get {url=https://www.automationexercise.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61904/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bcbda15794cd1e8313ace15f9991451
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationexercise.base.BaseClass.launchApp(BaseClass.java:104)
+at automationexercise.testcases.HomePageTest.setUp(HomePageTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionInhomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@5038d0b5]" started-at="2025-08-02T10:56:16Z" name="tearDown" finished-at="2025-08-02T10:56:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automationexercise.testcases.HomePageTest -->
+      <class name="automationexercise.testcases.CategoryPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:04Z" name="loadConfig" finished-at="2025-08-02T10:48:05Z" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:05Z" name="setUp" finished-at="2025-08-02T10:48:13Z" duration-ms="7493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addReviewOnProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:13Z" name="addReviewOnProduct" data-provider="writeReview" finished-at="2025-08-02T10:48:36Z" duration-ms="22568" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1013,67 +1526,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
                 <![CDATA[jayanthisaraperu@gmail.com]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUserwithExistingEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:09Z" name="tearDown" finished-at="2025-08-01T16:50:09Z" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:09Z" name="setUp" finished-at="2025-08-01T16:50:33Z" duration-ms="23391" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySubscriptionInhomePage(java.lang.String)[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:33Z" name="verifySubscriptionInhomePage" data-provider="subscriptionEmail" finished-at="2025-08-01T16:50:53Z" duration-ms="20504" status="FAIL">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[jayanthisaraperu@gmail.com]]>
+                <![CDATA[test]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/div\[\@class\=\'alert\-success\ alert\'\]"}
-  (Session info: chrome=138.0.7204.158)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fa2b7d61c8b405d0b359fb292d6d3c73, findElement {using=id, value=//div[@class='alert-success alert']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60631/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fa2b7d61c8b405d0b359fb292d6d3c73]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/div\[\@class\=\'alert\-success\ alert\'\]"}
-  (Session info: chrome=138.0.7204.158)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fa2b7d61c8b405d0b359fb292d6d3c73, findElement {using=id, value=//div[@class='alert-success alert']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60631/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fa2b7d61c8b405d0b359fb292d6d3c73
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at automationexercise.pageobjects.HomePage.verifySubscribeMsg(HomePage.java:128)
-at automationexercise.testcases.HomePageTest.verifySubscriptionInhomePage(HomePageTest.java:153)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at automationexercise.testcases.CategoryPageTest.addReviewOnProduct(CategoryPageTest.java:108)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -1099,66 +1568,45 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySubscriptionInhomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.HomePageTest@461ad730]" started-at="2025-08-01T16:50:53Z" name="tearDown" finished-at="2025-08-01T16:50:54Z" duration-ms="249" status="PASS">
+        </test-method> <!-- addReviewOnProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:36Z" name="tearDown" finished-at="2025-08-02T10:48:36Z" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationexercise.testcases.HomePageTest -->
-      <class name="automationexercise.testcases.CategoryPageTest">
-        <test-method is-config="true" signature="BaseClass()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:41:53Z" name="BaseClass" finished-at="2025-08-01T16:41:53Z" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BaseClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:41:54Z" name="setUp" finished-at="2025-08-01T16:42:03Z" duration-ms="8834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addReviewOnProduct(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:03Z" name="addReviewOnProduct" data-provider="writeReview" finished-at="2025-08-01T16:42:12Z" duration-ms="9329" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:36Z" name="setUp" finished-at="2025-08-02T10:48:42Z" duration-ms="5991" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Jayanthi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jayanthisaraperu@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addReviewOnProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:12Z" name="tearDown" finished-at="2025-08-01T16:42:12Z" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:12Z" name="setUp" finished-at="2025-08-01T16:42:17Z" duration-ms="4923" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartFromRecommendedItems()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:17Z" name="addToCartFromRecommendedItems" finished-at="2025-08-01T16:42:27Z" duration-ms="10061" status="PASS">
+        <test-method signature="addToCartFromRecommendedItems()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:42Z" name="addToCartFromRecommendedItems" finished-at="2025-08-02T10:48:52Z" duration-ms="10092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartFromRecommendedItems -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:27Z" name="tearDown" finished-at="2025-08-01T16:42:28Z" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:52Z" name="tearDown" finished-at="2025-08-02T10:48:53Z" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:28Z" name="setUp" finished-at="2025-08-01T16:42:41Z" duration-ms="12888" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:53Z" name="setUp" finished-at="2025-08-02T10:48:58Z" duration-ms="5190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="downloadInvoice(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:41Z" name="downloadInvoice" data-provider="downloadInvoice" finished-at="2025-08-01T16:42:48Z" duration-ms="7044" status="FAIL">
+        <test-method signature="downloadInvoice(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:48:58Z" name="downloadInvoice" data-provider="downloadInvoice" finished-at="2025-08-02T10:49:42Z" duration-ms="44028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1201,6 +1649,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadInvoice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:49:42Z" name="tearDown" finished-at="2025-08-02T10:49:43Z" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:49:43Z" name="setUp" finished-at="2025-08-02T10:49:49Z" duration-ms="6195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchProductsVerifyCartAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:49:49Z" name="searchProductsVerifyCartAfterLogin" data-provider="searchProduct" finished-at="2025-08-02T10:49:57Z" duration-ms="8039" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blue Top]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jayanthisaraperu@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Testing@123]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable: [object HTMLElement] has no size and location
@@ -1208,9 +1692,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [303f6bb622fd0d969e09456eaa25cf19, actions {actions=[org.openqa.selenium.interactions.Sequence@48840594]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59688/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 303f6bb622fd0d969e09456eaa25cf19]]>
+Command: [4fb78a921b6736d6bf4431687a366c16, actions {actions=[org.openqa.selenium.interactions.Sequence@9c73fff]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61292}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61292/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fb78a921b6736d6bf4431687a366c16]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLElement] has no size and location
@@ -1218,9 +1702,9 @@ Session ID: 303f6bb622fd0d969e09456eaa25cf19]]>
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [303f6bb622fd0d969e09456eaa25cf19, actions {actions=[org.openqa.selenium.interactions.Sequence@48840594]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59688/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 303f6bb622fd0d969e09456eaa25cf19
+Command: [4fb78a921b6736d6bf4431687a366c16, actions {actions=[org.openqa.selenium.interactions.Sequence@9c73fff]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61292}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61292/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fb78a921b6736d6bf4431687a366c16
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -1234,8 +1718,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
 at automationexercise.actiondriver.Action.click(Action.java:48)
-at automationexercise.pageobjects.HomePage.addProductsAndChkout(HomePage.java:151)
-at automationexercise.testcases.CategoryPageTest.downloadInvoice(CategoryPageTest.java:173)
+at automationexercise.pageobjects.SearchedProductsPage.clickAddToCart(SearchedProductsPage.java:42)
+at automationexercise.testcases.CategoryPageTest.searchProductsVerifyCartAfterLogin(CategoryPageTest.java:88)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -1264,45 +1748,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadInvoice -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:48Z" name="tearDown" finished-at="2025-08-01T16:42:48Z" duration-ms="338" status="PASS">
+        </test-method> <!-- searchProductsVerifyCartAfterLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:49:57Z" name="tearDown" finished-at="2025-08-02T10:49:57Z" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:48Z" name="setUp" finished-at="2025-08-01T16:42:53Z" duration-ms="4553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchProductsVerifyCartAfterLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:42:53Z" name="searchProductsVerifyCartAfterLogin" data-provider="searchProduct" finished-at="2025-08-01T16:43:08Z" duration-ms="15550" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:49:58Z" name="setUp" finished-at="2025-08-02T10:50:03Z" duration-ms="5423" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Blue Top]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jayanthisaraperu@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Testing@123]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProductsVerifyCartAfterLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:08Z" name="tearDown" finished-at="2025-08-01T16:43:09Z" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:09Z" name="setUp" finished-at="2025-08-01T16:43:14Z" duration-ms="5412" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddressDetailsInChkoutPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:14Z" name="verifyAddressDetailsInChkoutPage" data-provider="signUpPageCredentials" finished-at="2025-08-01T16:43:36Z" duration-ms="22220" status="FAIL">
+        <test-method signature="verifyAddressDetailsInChkoutPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:50:03Z" name="verifyAddressDetailsInChkoutPage" data-provider="signUpPageCredentials" finished-at="2025-08-02T10:50:27Z" duration-ms="24469" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1362,15 +1824,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[lists don't have the same size expected [5] but found [7]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: lists don't have the same size expected [5] but found [7]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at automationexercise.testcases.CategoryPageTest.verifyAddressDetailsInChkoutPage(CategoryPageTest.java:133)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:796)
+at automationexercise.testcases.CategoryPageTest.verifyAddressDetailsInChkoutPage(CategoryPageTest.java:161)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -1400,15 +1865,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddressDetailsInChkoutPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:36Z" name="tearDown" finished-at="2025-08-01T16:43:37Z" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:50:28Z" name="tearDown" finished-at="2025-08-02T10:50:28Z" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:37Z" name="setUp" finished-at="2025-08-01T16:43:41Z" duration-ms="4232" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:50:28Z" name="setUp" finished-at="2025-08-02T10:50:34Z" duration-ms="5890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="viewCartBrandProducts()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:43:41Z" name="viewCartBrandProducts" finished-at="2025-08-01T16:44:10Z" duration-ms="29562" status="FAIL">
+        <test-method signature="viewCartBrandProducts()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:50:34Z" name="viewCartBrandProducts" finished-at="2025-08-02T10:51:02Z" duration-ms="28541" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -1419,7 +1891,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at automationexercise.testcases.CategoryPageTest.viewCartBrandProducts(CategoryPageTest.java:73)
+at automationexercise.testcases.CategoryPageTest.viewCartBrandProducts(CategoryPageTest.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -1449,15 +1921,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewCartBrandProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:44:10Z" name="tearDown" finished-at="2025-08-01T16:44:11Z" duration-ms="301" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:51:03Z" name="tearDown" finished-at="2025-08-02T10:51:03Z" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:44:11Z" name="setUp" finished-at="2025-08-01T16:44:15Z" duration-ms="3914" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:51:03Z" name="setUp" finished-at="2025-08-02T10:51:09Z" duration-ms="5588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="viewCategoryProducts()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:44:15Z" name="viewCategoryProducts" finished-at="2025-08-01T16:45:00Z" duration-ms="45220" status="FAIL">
+        <test-method signature="viewCategoryProducts()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:51:09Z" name="viewCategoryProducts" finished-at="2025-08-02T10:51:54Z" duration-ms="45106" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -1468,7 +1947,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at automationexercise.testcases.CategoryPageTest.viewCategoryProducts(CategoryPageTest.java:64)
+at automationexercise.testcases.CategoryPageTest.viewCategoryProducts(CategoryPageTest.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -1498,149 +1977,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewCategoryProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@730d2164]" started-at="2025-08-01T16:45:00Z" name="tearDown" finished-at="2025-08-01T16:45:00Z" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:51:54Z" name="tearDown" finished-at="2025-08-02T10:51:54Z" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:automationexercise.testcases.CategoryPageTest@6cc4cdb9]" started-at="2025-08-02T10:56:24Z" name="afterSuite" finished-at="2025-08-02T10:56:24Z" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- automationexercise.testcases.CategoryPageTest -->
       <class name="automationexercise.testcases.TestCasePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationexercise.testcases.TestCasePageTest@4ee203eb]" started-at="2025-08-01T16:50:54Z" name="setUp" finished-at="2025-08-01T16:51:25Z" duration-ms="31088" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 28.808
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [396849520d7c203d137e58de3d9714a3, get {url=https://www.automationexercise.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60678/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 396849520d7c203d137e58de3d9714a3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.808
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [396849520d7c203d137e58de3d9714a3, get {url=https://www.automationexercise.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60678/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 396849520d7c203d137e58de3d9714a3
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-at automationexercise.base.BaseClass.launchApp(BaseClass.java:101)
-at automationexercise.testcases.TestCasePageTest.setUp(TestCasePageTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:automationexercise.testcases.TestCasePageTest@32115b28]" started-at="2025-08-02T10:56:16Z" name="setUp" finished-at="2025-08-02T10:56:22Z" duration-ms="5974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTestCasePage()[pri:0, instance:automationexercise.testcases.TestCasePageTest@4ee203eb]" started-at="2025-08-01T16:51:25Z" name="verifyTestCasePage" finished-at="2025-08-01T16:51:25Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 28.808
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [396849520d7c203d137e58de3d9714a3, get {url=https://www.automationexercise.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60678/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 396849520d7c203d137e58de3d9714a3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.808
-  (Session info: chrome=138.0.7204.158)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [396849520d7c203d137e58de3d9714a3, get {url=https://www.automationexercise.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60678/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 396849520d7c203d137e58de3d9714a3
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-at automationexercise.base.BaseClass.launchApp(BaseClass.java:101)
-at automationexercise.testcases.TestCasePageTest.setUp(TestCasePageTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="verifyTestCasePage()[pri:0, instance:automationexercise.testcases.TestCasePageTest@32115b28]" started-at="2025-08-02T10:56:22Z" name="verifyTestCasePage" finished-at="2025-08-02T10:56:23Z" duration-ms="913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTestCasePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.TestCasePageTest@4ee203eb]" started-at="2025-08-01T16:51:25Z" name="tearDown" finished-at="2025-08-01T16:51:25Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.TestCasePageTest@32115b28]" started-at="2025-08-02T10:56:23Z" name="tearDown" finished-at="2025-08-02T10:56:23Z" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationexercise.testcases.TestCasePageTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test_All -->
   </suite> <!-- Suite -->
 </testng-results>

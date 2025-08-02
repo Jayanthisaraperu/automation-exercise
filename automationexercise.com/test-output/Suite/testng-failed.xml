@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="automationexercise.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test_All(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="automationexercise.testcases.HomePageTest">
+        <methods>
+          <include name="registerUserTest"/>
+          <include name="setUp"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="verifySubscriptionInhomePage"/>
+          <include name="loginUserWithCorrectEmailAndPassword" invocation-numbers="0"/>
+          <include name="logoutUser"/>
+          <include name="registerUserwithExistingEmail"/>
+          <include name="afterSuite"/>
+          <include name="loginUserWithInCorrectEmailAndPassword"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.HomePageTest -->
+      <class name="automationexercise.testcases.ProductsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="addProductsInCart" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.ProductsPageTest -->
       <class name="automationexercise.testcases.CategoryPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="loadConfig"/>
+          <include name="addReviewOnProduct" invocation-numbers="0"/>
           <include name="verifyAddressDetailsInChkoutPage" invocation-numbers="0"/>
           <include name="viewCartBrandProducts"/>
           <include name="tearDown"/>
           <include name="viewCategoryProducts"/>
-          <include name="BaseClass"/>
-          <include name="downloadInvoice" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="searchProductsVerifyCartAfterLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- automationexercise.testcases.CategoryPageTest -->
-      <class name="automationexercise.testcases.ProductsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="addProductsInCart" invocation-numbers="0"/>
-          <include name="BaseClass"/>
-        </methods>
-      </class> <!-- automationexercise.testcases.ProductsPageTest -->
       <class name="automationexercise.testcases.CartPageTest">
         <methods>
           <include name="placeOrderRegisterWhileChkout" invocation-numbers="0"/>
-          <include name="removeProductsFromCart"/>
           <include name="placeOrderRegisterbeforeChkout" invocation-numbers="0"/>
+          <include name="loadConfig"/>
           <include name="setUp"/>
-          <include name="BaseClass"/>
+          <include name="afterSuite"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automationexercise.testcases.CartPageTest -->
-      <class name="automationexercise.testcases.HomePageTest">
-        <methods>
-          <include name="registerUserTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifySubscriptionInhomePage" invocation-numbers="0"/>
-          <include name="BaseClass"/>
-        </methods>
-      </class> <!-- automationexercise.testcases.HomePageTest -->
-      <class name="automationexercise.testcases.TestCasePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyTestCasePage"/>
-          <include name="setUp"/>
-          <include name="BaseClass"/>
-        </methods>
-      </class> <!-- automationexercise.testcases.TestCasePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

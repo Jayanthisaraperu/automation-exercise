@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automationexercise.base.BaseClass;
@@ -24,17 +25,18 @@ public class ProductsPageTest extends BaseClass {
 	SearchedProductsPage searchedProductsPage;
 	CartPage cartPage;
 	
-	@BeforeMethod
+	@Parameters("browser")
+	@BeforeMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void setUp(String browser) {
 		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void verifyAllProductsAndProductDetails() {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -58,7 +60,7 @@ public class ProductsPageTest extends BaseClass {
 
 	}
 	
-	@Test(dataProvider = "prodName", dataProviderClass = DataProviders.class, priority = 1)
+	@Test(dataProvider = "prodName", dataProviderClass = DataProviders.class)
 	public void searchProduct(String prodname) {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -73,7 +75,7 @@ public class ProductsPageTest extends BaseClass {
 		
 	}
 	
-	@Test(dataProvider = "firstRow", dataProviderClass = DataProviders.class, priority = 3)
+	@Test(dataProvider = "firstRow", dataProviderClass = DataProviders.class)
 	public void addProductsInCart(String item, String des, String price, String quan, String total ) throws Throwable {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -93,7 +95,7 @@ public class ProductsPageTest extends BaseClass {
 		Assert.assertEquals(productsPage.verifyCartdetails(), first);
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void verifyProductQuantityInCart() throws Throwable {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");

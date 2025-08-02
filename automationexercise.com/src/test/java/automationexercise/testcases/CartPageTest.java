@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automationexercise.base.BaseClass;
@@ -31,18 +32,19 @@ public class CartPageTest extends BaseClass {
 	AccountDeletedPage accountDeletedPage;
 	OrderPlacedPage orderPlacedPage;
 
-	@BeforeMethod
+	@Parameters("browser")
+	@BeforeMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void setUp(String browser) {
 		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"Smoke", "Sanity", "Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}
 
 
-	@Test(dataProvider = "subscriptionEmail", dataProviderClass = DataProviders.class, groups = { "smoke","sanity"}, priority = 0)
+	@Test(dataProvider = "subscriptionEmail", dataProviderClass = DataProviders.class, groups = { "smoke","sanity"})
 	public void verifySubscriptionInCartPage(String email) {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -54,7 +56,7 @@ public class CartPageTest extends BaseClass {
 		cartPage.enterEmail(email);
 	}
 
-	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression", priority = 1)
+	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression")
 	public void placeOrderRegisterWhileChkout(String name, String email, String pass, String fname, String lname,
 			String add, String coun, String state, String city, String zcode, String mob, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
@@ -95,7 +97,7 @@ public class CartPageTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression", priority = 2)
+	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression")
 	public void placeOrderRegisterbeforeChkout(String name, String email, String pass, String fname, String lname,
 			String add, String coun, String state, String city, String zcode, String mob, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
@@ -136,7 +138,7 @@ public class CartPageTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "placeOrderBeforeLogin", dataProviderClass = DataProviders.class, groups = "regression", priority = 3)
+	@Test(dataProvider = "placeOrderBeforeLogin", dataProviderClass = DataProviders.class, groups = "regression")
 	public void placeOrderLoginBeforeChkout(String name, String email, String pass, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
 		homePage = new HomePage();
@@ -168,7 +170,7 @@ public class CartPageTest extends BaseClass {
 		System.out.println(successmsg);
 	}
 	
-	@Test(groups = "smoke", priority = 4)
+	@Test(groups = "smoke")
 	public void removeProductsFromCart() throws Throwable {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
