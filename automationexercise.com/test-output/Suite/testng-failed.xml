@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="automationexercise.testcases.CategoryPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyAddressDetailsInChkoutPage" invocation-numbers="0"/>
+          <include name="viewCartBrandProducts"/>
+          <include name="tearDown"/>
+          <include name="viewCategoryProducts"/>
+          <include name="BaseClass"/>
+          <include name="downloadInvoice" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.CategoryPageTest -->
+      <class name="automationexercise.testcases.ProductsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addProductsInCart" invocation-numbers="0"/>
+          <include name="BaseClass"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.ProductsPageTest -->
+      <class name="automationexercise.testcases.CartPageTest">
+        <methods>
+          <include name="placeOrderRegisterWhileChkout" invocation-numbers="0"/>
+          <include name="removeProductsFromCart"/>
+          <include name="placeOrderRegisterbeforeChkout" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="BaseClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.CartPageTest -->
+      <class name="automationexercise.testcases.HomePageTest">
+        <methods>
+          <include name="registerUserTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySubscriptionInhomePage" invocation-numbers="0"/>
+          <include name="BaseClass"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.HomePageTest -->
+      <class name="automationexercise.testcases.TestCasePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyTestCasePage"/>
+          <include name="setUp"/>
+          <include name="BaseClass"/>
+        </methods>
+      </class> <!-- automationexercise.testcases.TestCasePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
