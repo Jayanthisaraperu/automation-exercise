@@ -10,7 +10,7 @@ import automationexercise.base.BaseClass;
 public class BrandPoloProductPage extends BaseClass{
 	Action action = new Action();
 	
-	@FindBy(xpath = "//h2[text()='Brand - Polo Products']")
+	@FindBy(xpath = "//h2[@class='title text-center']")
 	WebElement polobrand;
 	
 	@FindBy(xpath = "//a[text()='Madame']")

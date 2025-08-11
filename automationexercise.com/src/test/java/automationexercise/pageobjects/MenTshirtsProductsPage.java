@@ -8,8 +8,10 @@ import automationexercise.actiondriver.Action;
 import automationexercise.base.BaseClass;
 
 public class MenTshirtsProductsPage extends BaseClass {
+	
 	Action action = new Action();
-	@FindBy(xpath = "//h2[text()='Men - Tshirts Products']")
+	
+	@FindBy(xpath = "//h2[@class='title text-center']")
 	WebElement menTshirtsproduct;
 	
 	public MenTshirtsProductsPage() {

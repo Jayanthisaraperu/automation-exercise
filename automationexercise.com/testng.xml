@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test_All">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="automationexercise.testcases.HomePageTest">
-      <methods><include name="verifySubscriptionInhomePage"></include></methods>
+      <class name="automationexercise.testcases.CategoryPageTest">
+      
       </class>
       
     </classes>

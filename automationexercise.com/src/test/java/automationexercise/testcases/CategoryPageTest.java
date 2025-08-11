@@ -63,7 +63,10 @@ public class CategoryPageTest extends BaseClass {
 		homepage.leftbarDisplayed();
 		womenDressProductsPage = homepage.clickWomenCategory();
 		menTshirtsProductsPage = womenDressProductsPage.clickMenCategory();
+		Thread.sleep(2000);
 		Assert.assertTrue(menTshirtsProductsPage.menTshirtsProductDisplayed());
+//		Thread.sleep(2000);
+
 	}
 
 	@Test

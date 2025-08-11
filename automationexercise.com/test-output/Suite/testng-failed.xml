@@ -9,20 +9,17 @@
     <classes>
       <class name="automationexercise.testcases.HomePageTest">
         <methods>
-          <include name="registerUserTest"/>
+          <include name="registerUserTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="loadConfig"/>
           <include name="tearDown"/>
-          <include name="verifySubscriptionInhomePage"/>
-          <include name="loginUserWithCorrectEmailAndPassword" invocation-numbers="0"/>
-          <include name="logoutUser"/>
-          <include name="registerUserwithExistingEmail"/>
+          <include name="verifySubscriptionInhomePage" invocation-numbers="0"/>
           <include name="afterSuite"/>
-          <include name="loginUserWithInCorrectEmailAndPassword"/>
         </methods>
       </class> <!-- automationexercise.testcases.HomePageTest -->
       <class name="automationexercise.testcases.ProductsPageTest">
         <methods>
+          <include name="verifyAllProductsAndProductDetails"/>
           <include name="setUp"/>
           <include name="loadConfig"/>
           <include name="tearDown"/>
@@ -34,13 +31,9 @@
         <methods>
           <include name="setUp"/>
           <include name="loadConfig"/>
-          <include name="addReviewOnProduct" invocation-numbers="0"/>
           <include name="verifyAddressDetailsInChkoutPage" invocation-numbers="0"/>
-          <include name="viewCartBrandProducts"/>
           <include name="tearDown"/>
-          <include name="viewCategoryProducts"/>
           <include name="afterSuite"/>
-          <include name="searchProductsVerifyCartAfterLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- automationexercise.testcases.CategoryPageTest -->
       <class name="automationexercise.testcases.CartPageTest">
@@ -49,6 +42,7 @@
           <include name="placeOrderRegisterbeforeChkout" invocation-numbers="0"/>
           <include name="loadConfig"/>
           <include name="setUp"/>
+          <include name="placeOrderLoginBeforeChkout" invocation-numbers="0"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
         </methods>

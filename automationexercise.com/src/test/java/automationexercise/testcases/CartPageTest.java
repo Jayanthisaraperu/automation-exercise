@@ -44,7 +44,7 @@ public class CartPageTest extends BaseClass {
 	}
 
 
-	@Test(dataProvider = "subscriptionEmail", dataProviderClass = DataProviders.class, groups = { "smoke","sanity"})
+	@Test(dataProvider = "subscriptionEmail", dataProviderClass = DataProviders.class)
 	public void verifySubscriptionInCartPage(String email) {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
@@ -56,7 +56,7 @@ public class CartPageTest extends BaseClass {
 		cartPage.enterEmail(email);
 	}
 
-	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression")
+	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class)
 	public void placeOrderRegisterWhileChkout(String name, String email, String pass, String fname, String lname,
 			String add, String coun, String state, String city, String zcode, String mob, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
@@ -97,7 +97,7 @@ public class CartPageTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class, groups = "regression")
+	@Test(dataProvider = "placeOrder", dataProviderClass = DataProviders.class)
 	public void placeOrderRegisterbeforeChkout(String name, String email, String pass, String fname, String lname,
 			String add, String coun, String state, String city, String zcode, String mob, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
@@ -138,7 +138,7 @@ public class CartPageTest extends BaseClass {
 
 	}
 
-	@Test(dataProvider = "placeOrderBeforeLogin", dataProviderClass = DataProviders.class, groups = "regression")
+	@Test(dataProvider = "placeOrderBeforeLogin", dataProviderClass = DataProviders.class)
 	public void placeOrderLoginBeforeChkout(String name, String email, String pass, String text, String num,
 			String cvcno, String month, String year) throws Throwable {
 		homePage = new HomePage();
@@ -170,7 +170,7 @@ public class CartPageTest extends BaseClass {
 		System.out.println(successmsg);
 	}
 	
-	@Test(groups = "smoke")
+	@Test
 	public void removeProductsFromCart() throws Throwable {
 		homePage = new HomePage();
 		Log.info("Verify HomePage is Successfull");
